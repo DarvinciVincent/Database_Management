@@ -1,0 +1,7 @@
+ALTER TABLE public.department
+    ADD CONSTRAINT "Department_name_Check" 
+	CHECK (department_name = 'HR' 
+		   or department_name = 'Software' 
+		   or department_name='Data' 
+		   or department_name = 'ICT'
+		   or department_name='Customer Support');
